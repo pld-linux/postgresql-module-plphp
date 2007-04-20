@@ -1,3 +1,6 @@
+# TODO:
+# - it seems that it requires static php library??
+#   http://lists.commandprompt.com/pipermail/plphp/Week-of-Mon-20070326/000395.html
 %define		_pgpl_lang		plphp
 %define		_pgmoduledir		%{_libdir}/postgresql
 
@@ -54,7 +57,10 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: postgresql-module-plphp.spec,v $
-Revision 1.3  2007-04-20 14:14:53  blues
+Revision 1.4  2007-04-20 14:36:41  blues
+- TODO adde - it's crazy
+
+Revision 1.3  2007/04/20 14:14:53  blues
 - 1.3.3 - error remains, NFY
 
 Revision 1.2  2007/03/31 17:16:02  qboosh
