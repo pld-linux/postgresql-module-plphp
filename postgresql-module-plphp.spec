@@ -4,13 +4,13 @@
 Summary:	PL/PHP - PostgreSQL procedural language
 Summary(pl.UTF-8):	PL/PHP - język proceduralny bazy danych PostgreSQL
 Name:		postgresql-module-%{_pgpl_lang}
-Version:	1.3.2
+Version:	1.3.3
 Release:	0.1
 Epoch:		1
 License:	BSD
 Group:		Applications/Databases
 Source0:	http://projects.commandprompt.com/public/plphp/attachment/wiki/Downloads/%{_pgpl_lang}-%{version}.tar.gz?format=raw
-# Source0-md5:	e7ce7461521776e4567a6450eb328e33
+# Source0-md5:	54da4a6118a9294e7681c1aac712ecfa
 Patch0:		%{name}-nophp_test.patch
 #Patch1:		%{name}-tsrm.patch
 URL:		http://projects.commandprompt.com/public/plphp/
@@ -54,7 +54,10 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: postgresql-module-plphp.spec,v $
-Revision 1.2  2007-03-31 17:16:02  qboosh
+Revision 1.3  2007-04-20 14:14:53  blues
+- 1.3.3 - error remains, NFY
+
+Revision 1.2  2007/03/31 17:16:02  qboosh
 - URL, descs from summaries
 - use requires_eq_to as postgresql server is not BRed
 - BR: ac,am
