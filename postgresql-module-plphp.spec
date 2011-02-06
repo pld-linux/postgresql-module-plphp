@@ -54,25 +54,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc sql/*
 %attr(755,root,root) %{_pgmoduledir}/*.so
-
-%changelog
-* %{date} PLD Team <feedback@pld-linux.org>
-All persons listed below can be reached at <cvs_login>@pld-linux.org
-
-$Log: postgresql-module-plphp.spec,v $
-Revision 1.5  2011-02-06 17:13:41  sparky
-- added missing %clean section
-
-Revision 1.4  2007/04/20 14:36:41  blues
-- TODO adde - it's crazy
-
-Revision 1.3  2007/04/20 14:14:53  blues
-- 1.3.3 - error remains, NFY
-
-Revision 1.2  2007/03/31 17:16:02  qboosh
-- URL, descs from summaries
-- use requires_eq_to as postgresql server is not BRed
-- BR: ac,am
-
-Revision 1.1  2007/03/16 20:21:23  blues
-- initial, doesn't build yet
