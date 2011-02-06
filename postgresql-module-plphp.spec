@@ -47,6 +47,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %files
 %defattr(644,root,root,755)
 %doc sql/*
@@ -57,7 +60,10 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: postgresql-module-plphp.spec,v $
-Revision 1.4  2007-04-20 14:36:41  blues
+Revision 1.5  2011-02-06 17:13:41  sparky
+- added missing %clean section
+
+Revision 1.4  2007/04/20 14:36:41  blues
 - TODO adde - it's crazy
 
 Revision 1.3  2007/04/20 14:14:53  blues
